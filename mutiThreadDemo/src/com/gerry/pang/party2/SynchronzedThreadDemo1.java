@@ -21,6 +21,7 @@ public class SynchronzedThreadDemo1 implements Runnable {
 	@Override
 	public void run() {
 		for (int i = 0; i < 1000; i++) {
+			// 对于同步方法块，锁是Synchonized括号里配置的对象
 			synchronized (object) {
 				A++;
 			}

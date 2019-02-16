@@ -15,7 +15,10 @@ public class SynchronzedThreadDemo3 implements Runnable {
 		System.out.println(A);
 	}
 
-	public void add() {
+	/**
+	 * 对于普通同步方法，锁是当前实例对象
+	 */
+	public synchronized void add() {
 		A++;
 	}
 	

@@ -14,6 +14,7 @@ public class SynchronzedThreadDemo2 implements Runnable {
 	}
 
 	/**
+	 * 对于静态同步方法，锁是类
 	 * 锁-类锁
 	 */
 	public static synchronized void add() {
